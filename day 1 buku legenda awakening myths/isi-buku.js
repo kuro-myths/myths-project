@@ -1,0 +1,325 @@
+// Data cerita berdasarkan chapter yang diberikan
+const storyData = [
+    {
+        arc: "Arc 1 — Awal Kebangkitan",
+        arcNumber: 1,
+        chapter: "Chapter 1 — Retakan di Gerbang Kuno",
+        content: "Di tengah malam yang gelap, gerbang kuno yang telah berdiri selama ribuan tiba-tiba retak. Cahaya lima warna memancar dari dalam retakan tersebut, menerangi langit malam yang sebelumnya pekat. Para penjaga gerbang terkejut bukan main, belum pernah mereka melihat fenomena seperti ini sebelumnya. Kabar tentang retakan di gerbang kuno dengan cepat menyebar ke seluruh penjuru dunia, menandai dimulainya era baru yang akan dikenal sebagai Era Awakening. Para tetua dari lima clan besar segera berkumpul untuk membahas makna di balik peristiwa ini, karena mereka tahu bahwa ini adalah pertanda dari leluhur mereka."
+    },
+    {
+        arc: "Arc 1 — Awal Kebangkitan",
+        arcNumber: 1,
+        chapter: "Chapter 2 — Cahaya yang Memanggil",
+        content: "Setelah retakan di gerbang kuno muncul, sesuatu yang ajaib terjadi. Setiap clan mulai mendengar panggilan misterius yang hanya bisa didengar oleh anggota clan mereka. Clan VTO mendengar panggilan dari cahaya merah menyala, clan VTU dari cahaya biru langit, clan VTI dari cahaya hijau segar, clan VTE dari cahaya kuning keemasan, dan clan VTA dari cahaya ungu misterius. Panggilan ini bukan sekadar suara, tetapi juga perasaan yang mendalam di hati setiap anggota clan, seolah-olah leluhur mereka sedang memanggil mereka untuk kembali ke sumber kekuatan asal mereka. Para pemimpin clan memahami bahwa ini adalah panggilan untuk memulai perjalanan suci."
+    },
+    {
+        arc: "Arc 1 — Awal Kebangkitan",
+        arcNumber: 1,
+        chapter: "Chapter 3 — Perjalanan Awakening",
+        content: "Dengan hati yang penuh harap dan tekad yang bulat, para anggota lima clan berkumpul di depan gerbang kuno yang telah retak. Mereka membawa bekal dan perlengkapan untuk perjalanan yang tidak diketahui lamanya. Satu per satu, mereka memasuki portal yang memancarkan cahaya lima warna tersebut. Di dalam portal, mereka menemukan jalan yang berbeda untuk setiap clan, namun semuanya menuju ke satu tujuan yang sama: sumber kekuatan leluhur. Perjalanan ini penuh dengan ujian dan rintangan, tetapi semangat persatuan dan tekad untuk membangkitkan kembali kekuatan clan mereka membuat mereka terus maju. Setiap langkah membawa mereka lebih dekat dengan takdir mereka."
+    },
+    {
+        arc: "Arc 1 — Awal Kebangkitan",
+        arcNumber: 1,
+        chapter: "Chapter 4 — Ujian Para Leluhur",
+        content: "Setelah melewati perjalanan yang panjang, lima clan tiba di sebuah tempat yang dikenal sebagai Arena Ujian. Di sini, mereka harus menghadapi serangkaian ujian yang dirancang oleh para leluhur untuk menguji keberanian, kesetiaan, dan persatuan mereka. Ujian pertama menguji keberanian, di mana setiap clan harus menghadapi ketakutan terbesar mereka. Ujian kedua menguji kesetiaan, di mana mereka harus memilih antara kepentingan pribadi dan kepentingan clan. Ujian ketiga dan terakhir menguji persatuan, di mana kelima clan harus bekerja sama untuk menyelesaikan tantangan yang tidak bisa diatasi sendirian. Banyak yang hampir menyerah, tetapi semangat persaudaraan dan ingatan akan tujuan mereka membuat mereka bertahan."
+    },
+    {
+        arc: "Arc 1 — Awal Kebangkitan",
+        arcNumber: 1,
+        chapter: "Chapter 5 — Kebangkitan Legenda Baru",
+        content: "Setelah berhasil melewati semua ujian, sesuatu yang luar biasa terjadi. Portal yang retak mulai menyatu dengan dunia nyata, menciptakan jembatan permanen antara dunia manusia dan dunia leluhur. Cahaya lima warna memenuhi langit, dan para anggota clan merasakan kekuatan baru mengalir dalam diri mereka. Era baru telah dimulai, era di mana manusia dan leluhur dapat bekerja sama untuk menciptakan dunia yang lebih baik. Para pemimpin clan mengumumkan berita ini kepada seluruh anggota mereka, dan perayaan besar-besaran digelar di seluruh penjuru negeri. Namun, mereka juga tahu bahwa dengan kekuatan baru ini datang tanggung jawab baru untuk menjaga keseimbangan dunia."
+    },
+    {
+        arc: "Arc 2 — Dunia Paralel",
+        arcNumber: 2,
+        chapter: "Chapter 6 — Dunia di Antara Dua Cahaya",
+        content: "Beberapa bulan setelah portal menyatu dengan dunia nyata, para penjelajah dari lima clan mulai menyelidiki lebih dalam tentang dunia di balik portal tersebut. Mereka menemukan bahwa portal tersebut tidak hanya menghubungkan ke dunia leluhur, tetapi juga ke dunia paralel yang bernama Etera. Etera adalah tanah mitologi yang telah lama terlupakan, tempat di mana cerita-cerita kuno dan legenda menjadi kenyataan. Lanskap Etera sangat berbeda dengan dunia manusia, dengan pegunungan yang menjulang tinggi, hutan yang lebat, dan sungai yang berkilauan dengan cahaya misterius. Para penjelajah terpesona oleh keindahan dan keajaiban dunia baru ini, tetapi mereka juga merasakan ada sesuatu yang misterius dan berbahaya di balik keindahannya."
+    },
+    {
+        arc: "Arc 2 — Dunia Paralel",
+        arcNumber: 2,
+        chapter: "Chapter 7 — Jejak Leluhur",
+        content: "Dalam eksplorasi mereka di Etera, setiap clan mulai menemukan peninggalan leluhur mereka. Clan VTO menemukan kuil kuno dengan api abadi yang menyala-nyala, clan VTU menemukan menara observasi yang bisa melihat ke langit bintang, clan VTI menemukan taman suci dengan tanaman obat yang langka, clan VTE menemukan perpustakaan dengan pengetahuan kuno, dan clan VTA menemukan ruang meditasi dengan energi mistis. Peninggalan-peninggalan ini tidak hanya memberikan wawasan tentang sejarah leluhur mereka, tetapi juga mengajarkan mereka cara menggunakan kekuatan baru mereka dengan lebih baik. Setiap penemuan memperkuat ikatan antara clan dan leluhur mereka, serta memperdalam pemahaman mereka tentang tujuan sebenarnya dari portal tersebut."
+    },
+    {
+        arc: "Arc 2 — Dunia Paralel",
+        arcNumber: 2,
+        chapter: "Chapter 8 — Simbol Awal",
+        content: "Suatu malam, saat para anggota clan sedang berkumpul di Etera, fenomena aneh terjadi di langit. Simbol kuno yang terdiri dari lima bagian, masing-masing mewakili kelima clan, muncul dan bersinar terang. Simbol ini menjadi tanda persatuan lima clan, mengingatkan mereka bahwa meskipun mereka memiliki kekuatan dan tujuan yang berbeda, mereka adalah satu kesatuan yang tidak terpisahkan. Para tetua menafsirkan simbol ini sebagai pesan dari leluhur bahwa persatuan adalah kunci untuk menghadapi tantangan yang akan datang. Sejak malam itu, simbol tersebut diadopsi sebagai lambang resmi aliansi lima clan, dan dipajang di setiap pemukiman mereka di Etera."
+    },
+    {
+        arc: "Arc 2 — Dunia Paralel",
+        arcNumber: 2,
+        chapter: "Chapter 9 — Bayangan Pertama",
+        content: "Damai di Etera tidak bertahan lama. Entitas misterius yang dikenal sebagai Umbra mulai muncul, menciptakan kekacauan dan ketakutan di mana pun mereka pergi. Umbra adalah bayangan hidup, pecahan kegelapan yang keluar dari portal ketika retakan pertama kali terjadi. Mereka tidak memiliki bentuk fisik yang tetap, tetapi bisa berubah menjadi apa saja yang mereka inginkan, seringkali meniru bentuk makhluk atau orang yang paling ditakuti oleh korbannya. Serangan pertama Umbra mengejutkan semua orang, karena tidak ada yang menyangka bahwa ada ancaman seperti ini di Etera. Para anggota clan segera berkumpul untuk membahas cara menghadapi ancaman baru ini, tetapi mereka menyadari bahwa kekuatan mereka saja mungkin tidak cukup."
+    },
+    {
+        arc: "Arc 2 — Dunia Paralel",
+        arcNumber: 2,
+        chapter: "Chapter 10 — Sumpah Lima Clan",
+        content: "Menghadapi ancaman Umbra yang semakin meningkat, para pemimpin lima clan mengadakan pertemuan darurat. Setelah berdiskusi panjang, mereka sepakat untuk bersumpah menjaga portal dan Etera dari ancaman Umbra. Sumpah ini bukan sekadar janji lisan, tetapi diikat dengan ritual kuno yang melibatkan darah dan energi dari setiap clan. Dengan sumpah ini, lima clan secara resmi membentuk aliansi yang kuat, bersatu melawan kegelapan. Mereka membagi tugas dan tanggung jawab, dengan setiap clan mengawasi area tertentu di Etera dan portal. Sumpah ini juga menandai awal dari kerjasama yang lebih erat antara clan, yang sebelumnya sering bersaing satu sama lain."
+    },
+    {
+        arc: "Arc 3 — Konflik Pertama",
+        arcNumber: 3,
+        chapter: "Chapter 11 — Serangan Umbra",
+        content: "Tidak lama setelah sumpah lima clan diucapkan, Umbra melancarkan serangan besar-besaran pertama mereka. Target mereka adalah desa pertama yang dibangun oleh aliansi di Etera, yang menjadi simbol persatuan dan harapan baru. Serangan ini terkoordinasi dengan baik, dengan ratusan entitas bayangan menyerang dari segala arah. Para penduduk desa panik, tetapi para prajurit dari lima clan segera mengorganisir pertahanan. Pertempuran sengit terjadi, dengan cahaya dari kekuatan clan bertabrakan dengan kegelapan Umbra. Serangan ini bukan hanya untuk menghancurkan desa, tetapi juga untuk menguji kekuatan dan persiapan lima clan dalam menghadapi ancaman nyata."
+    },
+    {
+        arc: "Arc 3 — Konflik Pertama",
+        arcNumber: 3,
+        chapter: "Chapter 12 — Api dan Darah",
+        content: "Dalam pertempuran melawan Umbra, clan VTO memimpin perlawanan dengan keberanian dan kekuatan api mereka. Mereka berada di garis depan, melindungi penduduk desa dan menghadapi serangan Umbra secara langsung. Namun, perlawanan mereka tidak mudah. Banyak prajurit VTO yang gugur dalam pertempuran, dan desa tersebut mengalami kerusakan parah. Api dari pertempuran menyala di mana-mana, dan darah memercik ke tanah. Meskipun akhirnya mereka berhasil mengusir Umbra, kemenangan ini diraih dengan harga yang mahal. Para pemimpin clan menyadari bahwa mereka perlu strategi yang lebih baik dan persiapan yang lebih matang jika ingin menghadapi serangan-serangan selanjutnya."
+    },
+    {
+        arc: "Arc 3 — Konflik Pertama",
+        arcNumber: 3,
+        chapter: "Chapter 13 — Bisikan Kosmik",
+        content: "Sementara clan lain fokus pada pertempuran fisik melawan Umbra, anggota clan VTU yang memiliki kemampuan spiritual mulai mendengar bisikan kosmik. Bisikan ini datang dari bintang-bintang di langit Etera, memberikan peringatan akan musuh sejati yang lebih besar dan lebih berbahaya daripada Umbra. Menurut bisikan ini, Umbra hanyalah pion dari entitas yang lebih kuat yang berencana untuk menyerang baik Etera maupun dunia manusia. Para anggota VTU segera melaporkan temuan ini kepada para pemimpin aliansi, tetapi banyak yang skeptis. Namun, beberapa pemimpin percaya pada peringatan ini dan mulai mempersiapkan diri untuk menghadapi ancaman yang mungkin lebih besar dari yang mereka kira."
+    },
+    {
+        arc: "Arc 3 — Konflik Pertama",
+        arcNumber: 3,
+        chapter: "Chapter 14 — Hutan yang Tertidur",
+        content: "Dalam pencarian mereka untuk cara mengatasi luka dan kerugian dari pertempuran melawan Umbra, clan VTI menemukan hutan suci yang telah lama tertidur di Etera. Hutan ini memiliki kekuatan penyembuhan yang luar biasa, mampu menyembuhkan luka fisik dan spiritual yang diderita oleh para prajurit. Namun, hutan ini tidak mudah diakses. Terdapat penghalang mistis di sekitarnya, dan hanya mereka yang memiliki niat murni dan hati yang bersih yang bisa masuk. Setelah melalui serangkaian ujian, para anggota VTI berhasil memasuki hutan dan membangun tempat perlindungan sementara bagi yang terluka. Penemuan ini memberikan harapan baru bagi aliansi, karena mereka sekarang memiliki tempat untuk pulih dan memulihkan kekuatan mereka."
+    },
+    {
+        arc: "Arc 3 — Konflik Pertama",
+        arcNumber: 3,
+        chapter: "Chapter 15 — Pertemuan di Singgasana Cahaya",
+        content: "Melihat kebutuhan akan persatuan yang lebih kuat di tengah ancaman yang meningkat, pemimpin clan VTE mengajak semua clan untuk berkumpul di Singgasana Cahaya, sebuah struktur kuno yang ditemukan oleh anggota VTE di Etera. Singgasana ini adalah tempat di mana cahaya dari lima clan bersatu, menciptakan energi yang kuat dan harmonis. Di pertemuan ini, para pemimpin clan mendiskusikan strategi untuk menghadapi Umbra dan ancaman lainnya, serta cara untuk memperkuat aliansi mereka. Mereka sepakat untuk berbagi pengetahuan dan sumber daya, serta mengirimkan perwakilan dari setiap clan untuk bekerja sama dalam misi-misi penting. Pertemuan ini menandai titik balik dalam perjuangan aliansi, dengan persatuan yang lebih kuat dan tujuan yang lebih jelas."
+    },
+    {
+        arc: "Arc 4 — Aliansi & Pengkhianatan",
+        arcNumber: 4,
+        chapter: "Chapter 16 — Dewan Awakening",
+        content: "Setelah pertemuan di Singgasana Cahaya, lima clan secara resmi membentuk Dewan Myths, sebuah persekutuan resmi yang bertujuan untuk mengkoordinasikan upaya mereka dalam menjaga Etera dan portal dari ancaman. Dewan ini terdiri dari perwakilan dari setiap clan, dengan seorang ketua yang dipilih secara bergilir setiap tahun. Mereka mendirikan markas besar di dekat portal, dengan bangunan yang mencerminkan lima elemen dan warna clan. Dewan Myths segera mulai bekerja, membuat peraturan, merencanakan strategi, dan mengirimkan misi untuk menjelajahi Etera lebih lanjut. Pembentukan dewan ini adalah langkah penting dalam mengorganisir kekuatan lima clan menjadi satu entitas yang lebih efektif dan terkoordinasi."
+    },
+    {
+        arc: "Arc 4 — Aliansi & Pengkhianatan",
+        arcNumber: 4,
+        chapter: "Chapter 17 — Senjata Kuno",
+        content: "Dalam eksplorasi mereka di Etera, anggota clan VTA menemukan senjata kuno yang dikabarkan bisa membuka kekuatan penuh dari portal. Senjata ini berbentuk tongkat dengan kristal di ujungnya, yang bisa menyerap dan memancarkan energi dari lima clan. Namun, senjata ini juga memiliki sisi gelap. Jika digunakan dengan niat yang salah, senjata ini bisa membuka celah untuk kegelapan masuk ke dunia. Para anggota VTA membawa penemuan ini ke Dewan Myths untuk didiskusikan. Setelah perdebatan panjang, mereka sepakat untuk menyimpan senjata ini di tempat yang aman dan hanya menggunakannya dalam keadaan darurat. Penemuan senjata ini menambahkan lapisan kompleksitas pada perjuangan aliansi, karena mereka sekarang memiliki kekuatan besar yang bisa menjadi berkah atau kutukan."
+    },
+    {
+        arc: "Arc 4 — Aliansi & Pengkhianatan",
+        arcNumber: 4,
+        chapter: "Chapter 18 — Bayangan di Tengah Cahaya",
+        content: "Sementara aliansi semakin kuat, Umbra tidak tinggal diam. Mereka menyusup ke dalam Dewan Myths, menabur benih keraguan dan ketidakpercayaan antar anggota. Mereka mengambil bentuk manusia, menyamar sebagai anggota clan yang setia, dan secara halus mempengaruhi keputusan-keputusan penting. Mereka menyoroti perbedaan antar clan, mengingatkan persaingan masa lalu, dan menyarankan bahwa mungkin lebih baik jika setiap clan bekerja sendiri-sendiri. Akibatnya, meskipun secara resmi aliansi masih utuh, retakan mulai muncul dalam hubungan antar anggota dewan. Beberapa anggota mulai curiga pada yang lain, dan kerjasama yang sebelumnya mulus menjadi kaku dan penuh ketegangan. Umbra berhasil menciptakan perpecahan dari dalam, yang mungkin lebih berbahaya daripada serangan langsung mereka."
+    },
+    {
+        arc: "Arc 4 — Aliansi & Pengkhianatan",
+        arcNumber: 4,
+        chapter: "Chapter 19 — Pecahnya Kesepakatan",
+        content: "Ketegangan di dalam Dewan Myths mencapai puncaknya ketika isu tentang penggunaan senjata kuno yang ditemukan oleh VTA muncul kembali. Beberapa anggota dewan ingin menggunakan senjata tersebut untuk menghancurkan Umbra sekali dan untuk selamanya, sementara yang lain khawatir tentang risiko yang terkait. Perdebatan menjadi semakin panas, dengan tuduhan dan kecurigaan terbang di mana-mana. Akhirnya, kesepakatan yang telah dibangun dengan susah payah mulai retak. Beberapa clan mengancam akan meninggalkan aliansi jika keputusan tidak sesuai dengan keinginan mereka. Meskipun pada akhirnya mereka berhasil mencapai kompromi, kerusakan pada kepercayaan antar clan sudah terjadi. Perpecahan pertama dalam aliansi telah terjadi, dan Umbra menonton dengan puas dari kegelapan."
+    },
+    {
+        arc: "Arc 4 — Aliansi & Pengkhianatan",
+        arcNumber: 4,
+        chapter: "Chapter 20 — Pengkhianatan Sang Pewaris",
+        content: "Di tengah-tengah ketegangan dalam aliansi, seorang pewaris muda dari salah satu clan tergoda oleh janji-janji Umbra. Umbra menawarkan kekuatan yang lebih besar, pengetahuan yang lebih luas, dan posisi yang lebih tinggi jika dia bersedia membantu mereka. Setelah melalui pergolakan batin yang panjang, pewaris muda ini akhirnya menyerah pada godaan tersebut. Diam-diam, dia mencuri senjata kuno yang disimpan oleh VTA dan membuka celah portal kegelapan, memungkinkan lebih banyak Umbra untuk masuk ke Etera. Pengkhianatan ini tidak segera diketahui oleh aliansi, tetapi efeknya segera terasa. Serangan Umbra menjadi lebih terkoordinasi dan lebih kuat, dan para pemimpin aliansi mulai menyadari bahwa ada pengkhianat di antara mereka. Namun, mereka tidak tahu siapa, dan kecurigaan mulai menjalar ke seluruh aliansi."
+    },
+    {
+        arc: "Arc 5 — Perang Umbra",
+        arcNumber: 5,
+        chapter: "Chapter 21 — Invasi Kegelapan",
+        content: "Dengan celah portal yang dibuka oleh pengkhianat, Umbra melancarkan invasi besar-besaran ke Etera. Ribuan entitas bayangan menyerang dari segala arah, menghancurkan pemukiman, dan mencemarkan tanah suci. Invasi ini jauh lebih besar dan lebih terkoordinasi daripada serangan-serangan sebelumnya, menunjukkan bahwa Umbra telah merencanakannya dengan matang. Etera terguncang hebat, dan para penduduknya panik. Aliansi lima clan segera mengorganisir pertahanan, tetapi mereka kewalahan oleh jumlah dan kekuatan Umbra. Pertempuran sengit terjadi di seluruh Etera, dengan cahaya dan kegelapan bertabrakan di mana-mana. Ini adalah perang sesungguhnya, dan kelangsungan hidup Etera dan aliansi dipertaruhkan."
+    },
+    {
+        arc: "Arc 5 — Perang Umbra",
+        arcNumber: 5,
+        chapter: "Chapter 22 — Kota yang Jatuh",
+        content: "Salah satu kota utama di Etera, yang menjadi pusat perdagangan dan budaya, menjadi target utama invasi Umbra. Meskipun para prajurit aliansi berjuang dengan gigih, mereka tidak bisa menahan serangan terus-menerus dari Umbra. Pertahanan kota perlahan-lahan runtuh, dan akhirnya, kota tersebut jatuh ke tangan bayangan. Banyak penduduk yang dievakuasi, tetapi tidak sedikit yang tertinggal dan menjadi korban. Jatuhnya kota ini adalah pukulan telak bagi moral aliansi, karena kota ini adalah simbol kemakmuran dan kekuatan mereka di Etera. Namun, di tengah keputusasaan, semangat perlawanan tidak padam. Para pemimpin aliansi bersumpah untuk merebut kembali kota tersebut dan mengusir Umbra dari Etera, tidak peduli berapa pun harga yang harus dibayar."
+    },
+    {
+        arc: "Arc 5 — Perang Umbra",
+        arcNumber: 5,
+        chapter: "Chapter 23 — Pahlawan yang Gugur",
+        content: "Dalam pertempuran sengit untuk mempertahankan markas besar Dewan Myths, salah satu pemimpin clan gugur. Dia adalah pemimpin yang dihormati dan dicintai oleh banyak orang, yang telah memimpin clannya dengan bijaksana dan berani selama bertahun-tahun. Kematiannya adalah kehilangan besar bagi aliansi, tetapi juga menjadi inspirasi bagi para prajurit lainnya. Dia gugur sambil melindungi anggota lain dari dewan, memastikan bahwa mereka bisa melarikan diri dan melanjutkan perjuangan. Upacara pemakaman singkat diadakan di tengah perang, dengan janji bahwa pengorbanannya tidak akan sia-sia. Kematiannya memperkuat tekad aliansi untuk terus berjuang, dan mengingatkan mereka bahwa perang ini membutuhkan pengorbanan."
+    },
+    {
+        arc: "Arc 5 — Perang Umbra",
+        arcNumber: 5,
+        chapter: "Chapter 24 — Api Perlawanan",
+        content: "Meskipun mengalami banyak kerugian, clan VTO tidak menyerah. Di bawah kepemimpinan baru, mereka menyalakan api perlawanan, memimpin serangan balasan terhadap Umbra. Mereka mengumpulkan sisa-sisa kekuatan aliansi dan melancarkan serangan gerilya di seluruh Etera, mengganggu jalur pasokan Umbra dan membebaskan daerah-daerah yang diduduki. Api perlawanan ini menyebar dengan cepat, menginspirasi clan lain untuk bergabung. Pertempuran sengit terjadi di banyak tempat, tetapi kali ini aliansi memiliki inisiatif. Mereka tidak lagi bertahan, tetapi menyerang. Semangat perlawanan ini memberikan harapan baru bagi Etera, dan menunjukkan bahwa meskipun dalam keadaan paling sulit sekalipun, semangat manusia tidak bisa dipadamkan."
+    },
+    {
+        arc: "Arc 5 — Perang Umbra",
+        arcNumber: 5,
+        chapter: "Chapter 25 — Cahaya yang Membelah Kegelapan",
+        content: "Dalam upaya terakhir untuk mengalahkan Umbra, clan VTE mengaktifkan 'Singgasana Cahaya', senjata pamungkas yang telah mereka siapkan sejak lama. Singgasana ini adalah struktur kuno yang bisa mengumpulkan dan memfokuskan cahaya dari lima clan menjadi satu sinar yang kuat. Dengan bantuan dari perwakilan setiap clan, VTE berhasil mengaktifkan Singgasana Cahaya, dan sinar cahaya yang sangat terang meluncur ke langit, kemudian menyebar ke seluruh Etera. Cahaya ini membelah kegelapan Umbra, menghancurkan banyak entitas bayangan dan memaksa sisanya untuk mundur. Meskipun tidak semua Umbra dihancurkan, serangan ini berhasil mengubah arah perang dan memberikan aliansi ruang untuk bernapas. Namun, para pemimpin aliansi tahu bahwa ini bukan akhir, karena kegelapan masih ada dan akan kembali jika mereka tidak waspada."
+    },
+    {
+        arc: "Arc 6 — Kebangkitan Sejati",
+        arcNumber: 6,
+        chapter: "Chapter 26 — Rahasia Portal Kedua",
+        content: "Setelah serangan balasan yang berhasil, para penjelajah aliansi menemukan rahasia yang mengejutkan di Etera. Ternyata ada portal lain di balik Etera, jauh lebih tua dan berbahaya daripada portal pertama. Portal ini tersembunyi di sebuah gua jauh di dalam pegunungan, dan dilindungi oleh segel kuno yang mulai melemah. Para penjelajah menyadari bahwa Umbra mungkin berasal dari portal ini, dan bahwa ancaman sebenarnya bukan hanya Umbra, tetapi apa pun yang ada di balik portal kedua tersebut. Penemuan ini mengubah segalanya, karena aliansi sekarang menyadari bahwa mereka mungkin hanya menghadapi pion dari musuh yang jauh lebih besar dan lebih berbahaya. Para pemimpin aliansi segera berkumpul untuk mendiskusikan bagaimana menghadapi ancaman baru ini."
+    },
+    {
+        arc: "Arc 6 — Kebangkitan Sejati",
+        arcNumber: 6,
+        chapter: "Chapter 27 — Kekuatan yang Terkunci",
+        content: "Dalam investigasi mereka tentang portal kedua, anggota clan VTU menemukan bahwa portal tersebut menyimpan entitas kosmik kuno yang telah terkunci selama ribuan tahun. Entitas ini adalah sumber dari semua kegelapan di Etera, dan juga sumber dari kekuatan lima clan. Menurut naskah kuno yang ditemukan oleh VTU, entitas ini adalah makhluk dari dimensi lain yang mencoba mengambil alih dunia ini ribuan tahun yang lalu, tetapi berhasil dikalahkan dan dikunci di dalam portal oleh leluhur lima clan. Namun, segel yang menguncinya mulai melemah, dan jika entitas ini berhasil lolos, tidak hanya Etera yang akan hancur, tetapi juga dunia manusia. Para anggota VTU menyadari bahwa mereka harus menemukan cara untuk memperkuat segel tersebut sebelum terlambat."
+    },
+    {
+        arc: "Arc 6 — Kebangkitan Sejati",
+        arcNumber: 6,
+        chapter: "Chapter 28 — Pertarungan Terakhir dengan Umbra",
+        content: "Sementara aliansi fokus pada portal kedua, Umbra melancarkan serangan terakhir mereka. Kali ini, mereka dipimpin oleh pengkhianat yang telah membuka celah portal kegelapan, yang sekarang telah berubah menjadi entitas bayangan yang kuat. Pertarungan sengit terjadi di dekat portal kedua, dengan aliansi berusaha melindungi area tersebut sambil mencoba menyelesaikan ritual untuk memperkuat segel. Pertarungan ini adalah yang paling sengit dalam sejarah Etera, dengan kedua belah pihak menggunakan kekuatan penuh mereka. Banyak prajurit gugur, tetapi aliansi berhasil bertahan. Dalam pertarungan ini, pengkhianat akhirnya dikalahkan, tetapi sebelum dia lenyap, dia berhasil melemahkan segel portal lebih jauh, memungkinkan entitas kosmik untuk mulai keluar."
+    },
+    {
+        arc: "Arc 6 — Kebangkitan Sejati",
+        arcNumber: 6,
+        chapter: "Chapter 29 — Pengorbanan Sang Leluhur",
+        content: "Ketika segel portal kedua hampir rusak sepenuhnya dan entitas kosmik mulai keluar, sesuatu yang ajaib terjadi. Roh leluhur dari lima clan muncul, telah dipanggil oleh doa dan pengorbanan para anggota aliansi. Roh-roh ini menjelaskan bahwa mereka adalah yang mengunci entitas kosmik tersebut ribuan tahun yang lalu, dan sekarang mereka harus mengorbankan diri mereka sekali lagi untuk menyelamatkan dunia. Dengan kekuatan gabungan dari lima clan, roh leluhur melakukan ritual terakhir, mengorbankan diri mereka untuk menutup portal kedua secara permanen. Cahaya terang menyelimuti area tersebut, dan ketika cahaya itu reda, portal kedua telah lenyap, begitu juga dengan roh leluhur. Para anggota aliansi menangis, tetapi juga bersyukur, karena pengorbanan leluhur mereka telah menyelamatkan Etera dan dunia manusia dari kehancuran."
+    },
+    {
+        arc: "Arc 6 — Kebangkitan Sejati",
+        arcNumber: 6,
+        chapter: "Chapter 30 — Awal Legenda Baru",
+        content: "Dengan portal kedua terkunci dan Umbra dikalahkan, Etera mulai pulih. Para anggota lima clan membangun kembali pemukiman mereka yang hancur, tetapi mereka tidak kembali seperti semula. Pengalaman mereka telah mengubah mereka secara fundamental. Mereka sekarang memahami kekuatan sejati mereka dan tanggung jawab yang menyertainya. Mereka tidak lagi hanya manusia biasa, tetapi telah bangkit sebagai legenda hidup, mewariskan Era Myths pada generasi berikutnya. Portal pertama tetap terbuka, menjadi jembatan antara dunia manusia dan Etera, tetapi sekarang dijaga dengan ketat oleh aliansi. Para pemimpin clan memutuskan untuk berbagi pengetahuan dan pengalaman mereka dengan generasi muda, mempersiapkan mereka untuk menghadapi tantangan masa depan. Dan di atas semua, mereka berjanji untuk selalu mengingat pengorbanan leluhur mereka, dan menjaga keseimbangan antara cahaya dan kegelapan di kedua dunia."
+    }
+];
+
+let currentPage = -1; // -1 untuk cover, 0 untuk halaman pertama, dst.
+const totalPages = storyData.length;
+
+// Inisialisasi buku
+function initBook() {
+    const book = document.getElementById('book');
+    const chapterIndicator = document.getElementById('chapterIndicator');
+    
+    // Buat indikator chapter
+    for (let i = 0; i < totalPages; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'chapter-dot';
+        if (i === 0) dot.classList.add('active');
+        dot.onclick = () => goToPage(i);
+        chapterIndicator.appendChild(dot);
+    }
+    
+    // Update tampilan awal
+    updateDisplay();
+    
+    // Sembunyikan loading
+    setTimeout(() => {
+        document.getElementById('loading').style.opacity = '0';
+        setTimeout(() => {
+            document.getElementById('loading').style.display = 'none';
+        }, 500);
+    }, 1000);
+}
+
+// Fungsi untuk membuat halaman
+function createPage(pageIndex) {
+    const page = document.createElement('div');
+    page.className = `page ${pageIndex % 2 === 0 ? 'left' : 'right'} arc-color-${storyData[pageIndex].arcNumber}`;
+    
+    const content = document.createElement('div');
+    content.className = 'page-content';
+    
+    const arcTitle = document.createElement('div');
+    arcTitle.className = 'arc-title';
+    arcTitle.textContent = storyData[pageIndex].arc;
+    
+    const chapterTitle = document.createElement('h2');
+    chapterTitle.className = 'chapter-title';
+    chapterTitle.textContent = storyData[pageIndex].chapter;
+    
+    const chapterContent = document.createElement('div');
+    chapterContent.className = 'chapter-content';
+    
+    // Pecah konten menjadi paragraf
+    const paragraphs = storyData[pageIndex].content.split('. ');
+    paragraphs.forEach((paragraph, index) => {
+        if (paragraph.trim()) {
+            const p = document.createElement('p');
+            p.textContent = paragraph + (index < paragraphs.length - 1 ? '.' : '');
+            chapterContent.appendChild(p);
+        }
+    });
+    
+    const pageNumber = document.createElement('div');
+    pageNumber.className = 'page-number';
+    pageNumber.textContent = `Halaman ${pageIndex + 1}`;
+    
+    content.appendChild(arcTitle);
+    content.appendChild(chapterTitle);
+    content.appendChild(chapterContent);
+    content.appendChild(pageNumber);
+    page.appendChild(content);
+    
+    return page;
+}
+
+// Fungsi untuk pergi ke halaman tertentu
+function goToPage(pageIndex) {
+    if (pageIndex < -1 || pageIndex >= totalPages) return;
+    
+    const book = document.getElementById('book');
+    
+    // Hapus semua halaman kecuali cover dan back cover
+    const pages = book.querySelectorAll('.page:not(#bookCover):not(#bookBack)');
+    pages.forEach(page => page.remove());
+    
+    // Tambahkan halaman baru
+    if (pageIndex >= 0) {
+        const leftPage = createPage(pageIndex);
+        book.appendChild(leftPage);
+        
+        if (pageIndex + 1 < totalPages) {
+            const rightPage = createPage(pageIndex + 1);
+            book.appendChild(rightPage);
+        }
+    }
+    
+    currentPage = pageIndex;
+    updateDisplay();
+}
+
+// Fungsi untuk halaman selanjutnya
+function nextPage() {
+    if (currentPage < totalPages - 1) {
+        if (currentPage === -1) {
+            goToPage(0);
+        } else {
+            goToPage(currentPage + 2);
+        }
+    }
+}
+
+// Fungsi untuk halaman sebelumnya
+function previousPage() {
+    if (currentPage > 0) {
+        goToPage(currentPage - 2);
+    } else if (currentPage === 0) {
+        goToPage(-1);
+    }
+}
+
+// Fungsi untuk memperbarui tampilan
+function updateDisplay() {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const chapterIndicator = document.getElementById('chapterIndicator');
+    const bookCover = document.getElementById('bookCover');
+    const bookBack = document.getElementById('bookBack');
+    
+    // Update tombol navigasi
+    prevBtn.disabled = currentPage === -1;
+    nextBtn.disabled = currentPage >= totalPages - 1;
+    
+    // Update indikator chapter
+    const dots = chapterIndicator.querySelectorAll('.chapter-dot');
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === Math.max(0, currentPage));
+    });
+    
+    // Tampilkan/sembunyikan cover dan back cover
+    bookCover.style.display = currentPage === -1 ? 'flex' : 'none';
+    bookBack.style.display = currentPage === -1 ? 'flex' : 'none';
+}
+
+// Inisialisasi buku saat halaman dimuat
+window.onload = initBook;
