@@ -1,0 +1,248 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #eaeaea;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(22, 33, 62, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #f5d742, #e9b44c, #f5d742);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 15px rgba(245, 215, 66, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a7c5eb;
+            margin-bottom: 20px;
+        }
+
+        .goals {
+            background: rgba(15, 52, 96, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 4px solid #f5d742;
+        }
+
+        .goals h2 {
+            color: #f5d742;
+            margin-bottom: 15px;
+        }
+
+        .goals ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        .goals li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .goals li:before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: #a7c5eb;
+        }
+
+        .phase {
+            margin-bottom: 40px;
+        }
+
+        .phase-title {
+            font-size: 1.8rem;
+            color: #a7c5eb;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(167, 197, 235, 0.3);
+        }
+
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .day-card {
+            background: rgba(26, 26, 46, 0.6);
+            border-radius: 8px;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(167, 197, 235, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-color: rgba(245, 215, 66, 0.5);
+        }
+
+        .day-card.completed {
+            border-left: 4px solid #4caf50;
+        }
+
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .day-number {
+            font-weight: bold;
+            color: #f5d742;
+            font-size: 1.1rem;
+        }
+
+        .day-status {
+            font-size: 1.2rem;
+        }
+
+        .day-task {
+            color: #eaeaea;
+            font-size: 0.95rem;
+        }
+
+        .final-results {
+            background: rgba(245, 215, 66, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px solid rgba(245, 215, 66, 0.3);
+        }
+
+        .final-results h2 {
+            color: #f5d742;
+            margin-bottom: 15px;
+        }
+
+        .final-results ul {
+            list-style-type: none;
+        }
+
+        .final-results li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .final-results li:before {
+            content: "⚔️";
+            position: absolute;
+            left: 0;
+        }
+
+        .note {
+            font-style: italic;
+            color: #a7c5eb;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background-color: #16213e;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #f5d742;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(245, 215, 66, 0.3);
+        }
+
+        .modal-content h3 {
+            color: #f5d742;
+            margin-bottom: 15px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-github {
+            background-color: #333;
+            color: white;
+        }
+
+        .btn-github:hover {
+            background-color: #555;
+        }
+
+        .btn-cancel {
+            background-color: #555;
+            color: white;
+        }
+
+        .btn-cancel:hover {
+            background-color: #777;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .days-grid {
+                grid-template-columns: 1fr;
+            }
+        }
